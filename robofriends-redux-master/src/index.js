@@ -19,10 +19,6 @@ const rootReducers = combineReducers({requestRobots, searchRobots})
 
 const store = createStore(rootReducers, applyMiddleware(thunkMiddleware, logger))
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App/>
-  </Provider>,
-  document.getElementById('root')
-);
+ReactDOM.createRoot(
+  document.getElementByld('root')).render(<App/>);
 registerServiceWorker();
